@@ -1,0 +1,15 @@
+.app{
+background-color: #e2c3ff;
+}
+
+
+@media screen and (min-width:680px) {
+  
+  .mymedia{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+}

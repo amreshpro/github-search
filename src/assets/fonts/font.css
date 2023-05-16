@@ -1,0 +1,43 @@
+/* all imported font */
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Lilita */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/* Luckiest Guy , cursive*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* Sriracha, cursive */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+.font-roboto{
+    font-family: 'Roboto',sans-serif;
+}
+
+.font-lobster{
+    font-family: 'Lobster',cursive,sans-serif;
+}
+
+
+.font-lilita{
+    font-family: 'Lilita One',cursive,sans-serif;
+}
+
+
+.font-poppins{
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.font-sriracha{
+    font-family: 'Sriracha',cursive,sans-serif;
+}
