@@ -43,7 +43,7 @@ else {
 
       return (
         <div className="mt-5 xsm:mx-1 xsm:mr-2 flex justify-center items-center w-full p-1 ">
-          <div className="p-5 rounded-lg m-1 shadow-lg   flex flex-wrap flex-col justify-center   bg-gradient-to-l  from-primary-200 via-primary-300 to-primary-600 ">
+          <div className="p-5 rounded-lg m-1 shadow-lg   flex flex-wrap flex-col justify-center   bg-gradient-to-t  from-primary-200 via-primary-300 to-primary-600 ">
             <div className="logo">
               <img
                 src={avatar_url}
