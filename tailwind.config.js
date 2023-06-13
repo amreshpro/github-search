@@ -29,6 +29,12 @@ export default {
               'white':'#fff',
               'grey':'#666',
               'blue':'#38bdf8',
+              'red':{
+                500:"#EF4444"
+              },
+              'violet':{
+500:"#8B5CF6"
+              },
   
       "primary": {
         50: "#F9F4FB",
