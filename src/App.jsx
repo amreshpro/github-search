@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Dashboard from "./components/Dashboard";
+import Error404 from "./components/pages/Error404";
 
 
 
@@ -19,7 +20,7 @@ const App = () => {
             }
           />
       
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<Error404/>} />
         </Routes>
       </BrowserRouter>
     </div>
