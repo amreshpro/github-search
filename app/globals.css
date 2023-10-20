@@ -1,27 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  padding: 0;
+  margin: 0;
+  background-origin: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+/* font  start  */
+
+.font-bebas{
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* font end */
+
+
+
+
+
+
+
+
+
+.Name,.gradient__text{
+  
+   
+  background: linear-gradient(#ff9966, #ff5e62);
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+
+
+.gradient__text1{
+  
+   
+  background: linear-gradient(#ff9966, #ff5e62);
+  background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+
+.gradient__text2 {
+
+
+background: linear-gradient(#05eecf, #146bdd);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+
+.skill__gradient {
+
+
+background: linear-gradient(to right,#abffdc, #00d9ff);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+
+.TextEffect {
+
+
+background: linear-gradient(#36D1DC, #5B86E5);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+
+
+
+.nav__hover{
+
+
+background: linear-gradient(#36D1DC, #5B86E5);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
 }
