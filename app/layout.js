@@ -13,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       <body>
         <ReactQueryProvider>
           <ReduxStoreProvider>

@@ -40,6 +40,8 @@ module.exports = {
       aqua: "#C6FFDD",
       snow: "#F4F1F1",
       cobalt: "#E5E5FF",
+      lightGray:"#E4E5E6",
+      navy:"#00416A",
     },
 
     extend: {},

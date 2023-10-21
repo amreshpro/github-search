@@ -7,14 +7,28 @@ const userSlice = createSlice({
     initialState: {
         user: {},
         followers:[],
-        follpwing:[]
+        following:[]
     },
     reducers:{
 
 updateUser:(state,action)=>{
 state.user = action.payload;
+console.log(state)
 return state    
+},
+
+updateFollower:(state,action)=>{
+    state.followers = action.payload;
+    return state
+},
+
+updateFollowing:(state,action)=>{
+    state.following = action.payload;
+    return state
 }
+
+
+
 
     }
 })
