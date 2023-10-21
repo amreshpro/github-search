@@ -4,7 +4,6 @@ import ReduxStoreProvider from "@/provider/ReduxStoreProvider";
 import ThemeProvider from "@/provider/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
 
-
 export const metadata = {
   title: "Github User Search",
   description: "A github user search application",
@@ -15,16 +14,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       <body>
-        <ReactQueryProvider>
-          <ReduxStoreProvider>
-            <ThemeProvider>
-              
-                <Navbar />
-                <main>{children}</main>
-              
-            </ThemeProvider>
-          </ReduxStoreProvider>
-        </ReactQueryProvider>
+        <ReduxStoreProvider>
+          <ThemeProvider>
+            <Navbar />
+            <main>{children}</main>
+          </ThemeProvider>
+        </ReduxStoreProvider>
       </body>
     </html>
   );
