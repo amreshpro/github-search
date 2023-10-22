@@ -2,10 +2,12 @@
 
 import { Loading } from "./Loading";
 import Link from "next/link";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { data } from "./rough";
 import { fetchDataFromApi } from "@/utils/api";
 import { useEffect, useState } from "react";
+import { updateUser } from "@/redux/feature/userSlice";
+
 
 
 
@@ -14,11 +16,14 @@ const User = () => {
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+const dispatch=useDispatch();
 
 
   const isDarkMode = useSelector((state) => state.mode);
   // search value
   const searchValue = useSelector((state) => state.search);
+
+
 
   useEffect(() => {
     setIsLoading(true);
@@ -29,23 +34,30 @@ const User = () => {
 
       if (response?.response?.status == 404) setIsError(true);
       else {
+        setIsError(false)
         const newUser = await response;
+        console.log(newUser);
+        dispatch(updateUser(newUser))
         setUserFetchedData(newUser);
       }
       setIsLoading(false);
     }
 
     fetchDataHandler();
-  }, [searchValue]);
+  },[dispatch, searchValue]);
 
-
+console.log(userFetchedData)
   if (isError) {
     return <h1 className="text-center py-4 text-xl">No User Found</h1>;
   }
   if (isLoading) {
     return <Loading />;
   }
+
+
+  console.log(userFetchedData)
   const { login, avatar_url, name, bio, html_url } = userFetchedData;
+
 
   return (
     <div

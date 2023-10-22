@@ -6,7 +6,13 @@ const searchSlice = createSlice({
     name: "search",
     initialState: "amreshpro",
     reducers: {
-        updateSearch: (state, action) => action.payload
+        updateSearch: (state, action) =>{
+         
+          if(action.payload.length>0){
+            state = action.payload
+          }
+          return state
+        }
     }
 })
 

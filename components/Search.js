@@ -19,10 +19,11 @@ const dispatch = useDispatch();
   const onSearchHandler = (e) => {
     e.preventDefault();
 
-    if (theValueForSearch.length > 0) {
+    if (theValueForSearch) {
       console.log(theValueForSearch);
     dispatch(updateSearch(theValueForSearch));
     }
+
   };
 
 
@@ -33,6 +34,7 @@ const dispatch = useDispatch();
         console.log(theValueForSearch);
       dispatch(updateSearch(theValueForSearch));
       }
+     
     }
   };
 

@@ -24,10 +24,11 @@ const Followers = () => {
       async function fetchDataHandler() {
         const fetchData = fetchDataFromApi(`${searchValue}/followers`);
         const response = await fetchData;
-        console.log(response);
+
   
         if (response?.response?.status == 404) setIsError(true);
         else {
+          setIsError(false);
           const newUser = await response;
           setUserFetchedData(newUser);
         }
@@ -39,13 +40,13 @@ const Followers = () => {
   
   
     if (isError) {
-      return <h1 className="text-center py-4 text-xl">No User Found</h1>;
+      return <h1 className="text-center py-4 text-xl">No Followers Found</h1>;
     }
     if (isLoading) {
       return <Loading />;
     }
 
-    if(userFetchedData.length<=0) return ''
+    if(!userFetchedData) return ''
 
 
 
